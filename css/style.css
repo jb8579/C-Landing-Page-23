@@ -3,6 +3,11 @@
     height: 39rem;
     height: var(--carousel-mobile-min-height);
   }
+  @media (max-width: 600px){
+  ._gridSlide-6-columns_jfo3v_61 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
   @media (min-width: 768px) {
     ._container_1vzj5_2 {
       height: 42.4rem;
