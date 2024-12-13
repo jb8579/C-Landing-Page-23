@@ -1,0 +1,2718 @@
+
+#nlportal-ssr .header-style {
+    color: #fff;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    font-family: UniformCondensed-Bold,Barlow Condensed,Arial;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+#nlportal-ssr .header-style.isActive:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #ff6900
+}
+
+#nlportal-ssr .header-style.small {
+    font-size: 14px;
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+@media only screen and (min-width: 1301px) {
+    #nlportal-ssr .header-style.small {
+        font-family:UniformCondensed-Bold,Barlow Condensed,Arial
+    }
+}
+
+#nlportal-ssr .header-style.mobile {
+    font-size: 14px;
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .header-style.mobile.isActive {
+    color: #232b2b;
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .header-style.sub-navigation {
+    text-transform: none;
+    font-family: Uniform-Regular,Barlow,Arial;
+    font-size: 14px;
+    margin: auto
+}
+
+#nlportal-ssr .bold-link {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .text-link {
+    color: #232b2b;
+    font-family: Uniform-Regular,Barlow,Arial;
+    text-decoration: none
+}
+
+#nlportal-ssr .text-link--medium {
+    font-family: Uniform-Medium,Barlow,Arial
+}
+
+#nlportal-ssr .text-link__active {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .footer-style {
+    font-size: 14px;
+    color: #646b6a;
+    text-decoration: none
+}
+
+#nlportal-ssr .icon-link {
+    margin: auto 0;
+    display: flex;
+    text-decoration: none
+}
+
+#nlportal-ssr .button-primary,#nlportal-ssr .button-secondary,#nlportal-ssr .button-secondary-white,#nlportal-ssr .button-tertiary,#nlportal-ssr .button-tertiary.inline-black {
+    background: linear-gradient(83deg,#ff6900 40.51%,#ff3d00 97.84%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    font-family: Uniform-Bold,Barlow,Arial;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 4px
+}
+
+#nlportal-ssr .button-primary::-moz-focus-inner,#nlportal-ssr .button-secondary::-moz-focus-inner,#nlportal-ssr .button-secondary-white::-moz-focus-inner,#nlportal-ssr .button-tertiary::-moz-focus-inner,#nlportal-ssr .button-tertiary.inline-black::-moz-focus-inner {
+    border: 0
+}
+
+#nlportal-ssr .button-primary svg,#nlportal-ssr .button-secondary svg,#nlportal-ssr .button-secondary-white svg,#nlportal-ssr .button-tertiary svg,#nlportal-ssr .button-tertiary.inline-black svg {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle
+}
+
+#nlportal-ssr .button-primary:focus,#nlportal-ssr .button-primary:hover,#nlportal-ssr .button-secondary:focus,#nlportal-ssr .button-secondary:hover,#nlportal-ssr .button-secondary-white:focus,#nlportal-ssr .button-secondary-white:hover,#nlportal-ssr .button-tertiary:focus,#nlportal-ssr .button-tertiary:hover {
+    background: #db5a00
+}
+
+#nlportal-ssr .button-primary:focus,#nlportal-ssr .button-secondary:focus,#nlportal-ssr .button-secondary-white:focus,#nlportal-ssr .button-tertiary:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-primary:active,#nlportal-ssr .button-secondary:active,#nlportal-ssr .button-secondary-white:active,#nlportal-ssr .button-tertiary:active {
+    background: #db5a00
+}
+
+#nlportal-ssr .button-primary.button-loading:after,#nlportal-ssr .button-secondary.button-loading:after,#nlportal-ssr .button-secondary-white.button-loading:after,#nlportal-ssr .button-tertiary.button-loading:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease,visibility 0s ease
+}
+
+#nlportal-ssr .button-primary:disabled,#nlportal-ssr .button-secondary:disabled,#nlportal-ssr .button-secondary-white:disabled,#nlportal-ssr .button-tertiary:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+#nlportal-ssr .button-primary-green {
+    background: #009639;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    font-family: Uniform-Bold,Barlow,Arial;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 4px
+}
+
+#nlportal-ssr .button-primary-green::-moz-focus-inner {
+    border: 0
+}
+
+#nlportal-ssr .button-primary-green svg {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle
+}
+
+#nlportal-ssr .button-primary-green:focus,#nlportal-ssr .button-primary-green:hover {
+    background: #007a33
+}
+
+#nlportal-ssr .button-primary-green:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-primary-green:active {
+    background: #007a33
+}
+
+#nlportal-ssr .button-primary-green.button-loading:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease,visibility 0s ease
+}
+
+#nlportal-ssr .button-primary-green:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+#nlportal-ssr .button-primary {
+    box-shadow: 0 4px 8px #00000014
+}
+
+#nlportal-ssr .button-secondary {
+    background: #e5e5e5;
+    color: #232b2b;
+    border: 2px solid #e5e5e5;
+    line-height: 40px
+}
+
+#nlportal-ssr .button-secondary:focus,#nlportal-ssr .button-secondary:hover {
+    background: #ccc;
+    border-color: #ccc;
+    color: #232b2b
+}
+
+#nlportal-ssr .button-secondary:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-secondary:disabled .button-secondary:active {
+    background: #ccc;
+    color: #fff;
+    border-color: #ccc
+}
+
+#nlportal-ssr .button-secondary.button-loading {
+    color: transparent
+}
+
+#nlportal-ssr .button-secondary.button-loading:after {
+    border-top-color: #646b6a
+}
+
+#nlportal-ssr .button-secondary.button-loading:active {
+    color: transparent
+}
+
+#nlportal-ssr .button-secondary.button-loading:active:after {
+    border-top-color: #646b6a
+}
+
+#nlportal-ssr .button-secondary.button-loading:disabled:after {
+    border-top-color: #e5e5e5
+}
+
+#nlportal-ssr .button-secondary-white {
+    background: #fff;
+    color: #ff6900;
+    border: 2px solid #ff6900;
+    line-height: 40px
+}
+
+#nlportal-ssr .button-secondary-white:focus,#nlportal-ssr .button-secondary-white:hover {
+    background: #db5a00;
+    border-color: #db5a00;
+    color: #fff
+}
+
+#nlportal-ssr .button-secondary-white:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-secondary-white:active {
+    background: #db5a00;
+    color: #fff;
+    border-color: #db5a00
+}
+
+#nlportal-ssr .button-secondary-white.button-loading {
+    color: transparent
+}
+
+#nlportal-ssr .button-secondary-white.button-loading:after {
+    border-top-color: #db5a00
+}
+
+#nlportal-ssr .button-secondary-white.button-loading:active {
+    color: transparent
+}
+
+#nlportal-ssr .button-secondary-white.button-loading:active:after {
+    border-top-color: #db5a00
+}
+
+#nlportal-ssr .button-secondary-white.button-loading:disabled:after {
+    border-top-color: #fff
+}
+
+#nlportal-ssr .button-tertiary,#nlportal-ssr .button-tertiary.inline-black {
+    background: transparent;
+    color: #007a33;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0;
+    border: none;
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .button-tertiary:focus,#nlportal-ssr .button-tertiary:hover {
+    color: #009639;
+    background: transparent
+}
+
+#nlportal-ssr .button-tertiary:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-tertiary:active {
+    color: #007a33;
+    background: transparent
+}
+
+#nlportal-ssr .button-tertiary.inline,#nlportal-ssr .button-tertiary.inline-black {
+    height: inherit;
+    font: inherit;
+    text-transform: none;
+    text-decoration: underline
+}
+
+#nlportal-ssr .button-tertiary.inline:hover,#nlportal-ssr .button-tertiary.inline-black:hover,#nlportal-ssr .button-tertiary.inline:focus,#nlportal-ssr .button-tertiary.inline-black:focus,#nlportal-ssr .button-tertiary.inline:active,#nlportal-ssr .button-tertiary.inline-black:active {
+    background: none
+}
+
+#nlportal-ssr .button-tertiary.inline-black {
+    color: inherit
+}
+
+#nlportal-ssr .button-tertiary.inline:focus,#nlportal-ssr .button-tertiary.inline-black:focus {
+    color: #ff8d3d
+}
+
+#nlportal-ssr .button-tertiary.icon-button:hover {
+    color: #007a33;
+    background-color: transparent
+}
+
+#nlportal-ssr .button-tertiary.icon-button:disabled {
+    color: #007a33;
+    background-color: transparent
+}
+
+#nlportal-ssr .button-tertiary.button-icon-left svg {
+    left: 5px;
+    top: 11px
+}
+
+#nlportal-ssr .button-tertiary.button-icon-right {
+    padding-right: 25px
+}
+
+#nlportal-ssr .button-tertiary.button-icon-right svg {
+    right: 5px;
+    top: 13px;
+    width: 16px;
+    height: 16px
+}
+
+#nlportal-ssr .button-tertiary.external svg {
+    right: 5px;
+    top: 11px
+}
+
+#nlportal-ssr .button-tertiary:disabled {
+    color: #007a33
+}
+
+#nlportal-ssr .button-tertiary:disabled:hover {
+    color: #007a33
+}
+
+#nlportal-ssr .button-tertiary .portal-icon {
+    margin: auto 0
+}
+
+#nlportal-ssr .button-primary.full-width,#nlportal-ssr .button-secondary.full-width {
+    width: 100%
+}
+
+#nlportal-ssr .button-primary.calendar-icon,#nlportal-ssr .button-secondary.calendar-icon {
+    position: absolute
+}
+
+#nlportal-ssr .button-primary-green.button-icon-right,#nlportal-ssr .button-primary.button-icon-right,#nlportal-ssr .button-secondary-white.button-icon-right,#nlportal-ssr .button-secondary.button-icon-right,#nlportal-ssr .button-tertiary.button-icon-right {
+    padding-right: 30px
+}
+
+#nlportal-ssr .button-primary-green.button-icon-right svg,#nlportal-ssr .button-primary.button-icon-right svg,#nlportal-ssr .button-secondary-white.button-icon-right svg,#nlportal-ssr .button-secondary.button-icon-right svg,#nlportal-ssr .button-tertiary.button-icon-right svg {
+    position: absolute;
+    right: 4px;
+    top: 9px
+}
+
+#nlportal-ssr .button-primary-green.button-icon-left,#nlportal-ssr .button-primary.button-icon-left,#nlportal-ssr .button-secondary-white.button-icon-left,#nlportal-ssr .button-secondary.button-icon-left,#nlportal-ssr .button-tertiary.button-icon-left {
+    padding-left: 25px
+}
+
+#nlportal-ssr .button-primary-green.button-icon-left svg,#nlportal-ssr .button-primary.button-icon-left svg,#nlportal-ssr .button-secondary-white.button-icon-left svg,#nlportal-ssr .button-secondary.button-icon-left svg,#nlportal-ssr .button-tertiary.button-icon-left svg {
+    position: absolute;
+    left: 0;
+    top: 10px
+}
+
+#nlportal-ssr .button-primary-green.button-loading,#nlportal-ssr .button-primary.button-loading,#nlportal-ssr .button-secondary-white.button-loading,#nlportal-ssr .button-secondary.button-loading,#nlportal-ssr .button-tertiary.button-loading {
+    color: transparent;
+    transition: color .3s ease
+}
+
+#nlportal-ssr .button-primary-green.button-loading:after,#nlportal-ssr .button-primary.button-loading:after,#nlportal-ssr .button-secondary-white.button-loading:after,#nlportal-ssr .button-secondary.button-loading:after,#nlportal-ssr .button-tertiary.button-loading:after {
+    border-radius: 100%;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 49%;
+    top: 44%;
+    transform: translate(-6px) translateY(-6px) rotate(0);
+    animation: nlportalLoadingButton 1s infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
+    opacity: 1;
+    visibility: visible
+}
+
+#nlportal-ssr .button-primary-green.button-loading svg,#nlportal-ssr .button-primary.button-loading svg,#nlportal-ssr .button-secondary-white.button-loading svg,#nlportal-ssr .button-secondary.button-loading svg,#nlportal-ssr .button-tertiary.button-loading svg {
+    display: none
+}
+
+@keyframes nlportalLoadingButton {
+    to {
+        transform: translate(-6px) translateY(-6px) rotate(360deg)
+    }
+}
+
+#nlportal-ssr .button-disabled {
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    font-family: Uniform-Bold,Barlow,Arial;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor: not-allowed;
+    border: 0;
+    background: #ccc;
+    color: #fff;
+    line-height: 44px
+}
+
+#nlportal-ssr .button-disabled::-moz-focus-inner {
+    border: 0
+}
+
+#nlportal-ssr .button-disabled svg {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle
+}
+
+#nlportal-ssr .button-disabled:focus,#nlportal-ssr .button-disabled:hover {
+    background: #fff
+}
+
+#nlportal-ssr .button-disabled:focus {
+    outline: none
+}
+
+#nlportal-ssr .button-disabled:active {
+    background: #ccc
+}
+
+#nlportal-ssr .button-disabled.button-loading:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease,visibility 0s ease
+}
+
+#nlportal-ssr .button-disabled:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+#nlportal-ssr .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 -4px;
+    align-items: center
+}
+
+#nlportal-ssr .button-row>* {
+    margin: 8px 4px
+}
+
+@media only screen and (max-width: 480px) {
+    #nlportal-ssr .button-row {
+        margin:0 -4px
+    }
+
+    #nlportal-ssr .button-row>* {
+        margin: 4px
+    }
+}
+
+#nlportal-ssr .calendar-icon {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#nlportal-ssr .label-icon {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center
+}
+
+#nlportal-ssr button {
+    border: none;
+    background: none;
+    cursor: pointer
+}
+
+#nlportal-ssr .account-page-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px
+}
+
+#nlportal-ssr .account-page-title__text {
+    font-family: UniformCondensed-Black,Barlow Condensed,Arial;
+    color: #232b2b;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .account-page-title__text {
+        font-size:24px;
+        line-height: 30px
+    }
+}
+
+#nlportal-ssr .account-page-title__button {
+    padding: 0;
+    display: block;
+    margin-right: 16px;
+    height: 24px
+}
+
+#nlportal-ssr .account-page-title__button i {
+    margin: 0
+}
+
+#nlportal-ssr .account-page-title--no-margin {
+    margin-bottom: 0
+}
+
+@font-face {
+    font-family: portal-icons;
+    src: url(https://www.toto.nl/assets/portal-icons.woff2?419dd685ff82b70c990cf09941cb406d) format("woff2")
+}
+
+@font-face {
+    font-family: UniformCondensed-Bold;
+    src: url(https://www.toto.nl/assets/UniformCondensed-Bold-webfont.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Uniform-Regular;
+    src: url(https://www.toto.nl/assets/Uniform-Regular-webfont.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Uniform-Medium;
+    src: url(https://www.toto.nl/assets/Uniform-Medium-webfont.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Uniform-Bold;
+    src: url(https://www.toto.nl/assets/Uniform-Bold-webfont.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: UniformCondensed-Black;
+    src: url(https://www.toto.nl/assets/UniformCondensed-Black-webfont.woff2) format("woff2")
+}
+
+#nlportal-ssr .base-styled-content a {
+    color: #007a33;
+    text-decoration: none;
+    border-bottom: 1px solid #007a33;
+    transition: all .1s linear
+}
+
+#nlportal-ssr .base-styled-content a:hover {
+    color: #007a33;
+    border-color: #007a33
+}
+
+#nlportal-ssr .base-styled-content ol,#nlportal-ssr .base-styled-content ul {
+    list-style: none
+}
+
+#nlportal-ssr .base-styled-content ol li,#nlportal-ssr .base-styled-content ul li {
+    margin: 16px 0;
+    padding-left: 24px;
+    position: relative
+}
+
+#nlportal-ssr .base-styled-content ol li:before,#nlportal-ssr .base-styled-content ul li:before {
+    position: absolute
+}
+
+#nlportal-ssr .base-styled-content ul li:before {
+    display: inline-block;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    background: #ff6900;
+    border-radius: 100%;
+    left: 4px;
+    top: 8px
+}
+
+#nlportal-ssr .base-styled-content ol {
+    counter-reset: list-counter;
+    list-style: none
+}
+
+#nlportal-ssr .base-styled-content ol li:before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    display: block;
+    font-size: 15px;
+    font-family: Uniform-Bold,Barlow,Arial;
+    color: #ff8d3d;
+    left: 0;
+    top: 0
+}
+
+#nlportal-ssr body {
+    background-repeat: repeat;
+    background-color: #f5f5f5;
+    background-size: cover
+}
+
+@media only screen and (max-width: 950px) {
+    #nlportal-ssr body {
+        background-size:contain
+    }
+}
+
+#nlportal-ssr body,#nlportal-ssr #nlportal,#nlportal-footer {
+    font-family: Uniform-Regular,Barlow,Arial;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #232b2b;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: normal;
+    word-spacing: normal
+}
+
+@media only screen and (max-width: 480px) {
+    #nlportal-ssr body [desktop],#nlportal-ssr #nlportal [desktop],#nlportal-footer [desktop] {
+        display:none!important
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    #nlportal-ssr body [mobile],#nlportal-ssr #nlportal [mobile],#nlportal-footer [mobile] {
+        display:none!important
+    }
+}
+
+#nlportal-ssr body h1,#nlportal-ssr body h2,#nlportal-ssr body h3,#nlportal-ssr body h4,#nlportal-ssr #nlportal h1,#nlportal-ssr #nlportal h2,#nlportal-ssr #nlportal h3,#nlportal-ssr #nlportal h4,#nlportal-footer h1,#nlportal-footer h2,#nlportal-footer h3,#nlportal-footer h4 {
+    font-family: UniformCondensed-Bold,Barlow Condensed,Arial
+}
+
+#nlportal-ssr body h5,#nlportal-ssr body h6,#nlportal-ssr #nlportal h5,#nlportal-ssr #nlportal h6,#nlportal-footer h5,#nlportal-footer h6 {
+    font-family: Uniform-Regular,Barlow,Arial;
+    margin-bottom: 10px
+}
+
+#nlportal-ssr body h1,#nlportal-ssr #nlportal h1,#nlportal-footer h1 {
+    font-size: 36px
+}
+
+#nlportal-ssr body h2,#nlportal-ssr #nlportal h2,#nlportal-footer h2 {
+    font-size: 32px
+}
+
+#nlportal-ssr body h3,#nlportal-ssr #nlportal h3,#nlportal-footer h3 {
+    font-size: 24px;
+    line-height: 24px
+}
+
+#nlportal-ssr body h4,#nlportal-ssr #nlportal h4,#nlportal-footer h4 {
+    font-size: 18px;
+    line-height: 24px
+}
+
+#nlportal-ssr body h5,#nlportal-ssr #nlportal h5,#nlportal-footer h5 {
+    font-size: 16px
+}
+
+#nlportal-ssr body h6,#nlportal-ssr #nlportal h6,#nlportal-footer h6 {
+    font-size: 14px
+}
+
+#nlportal-ssr p {
+    line-height: 1.6
+}
+
+#nlportal-ssr .page-title {
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+
+#nlportal-ssr .page-title-green {
+    color: #007a33
+}
+
+#nlportal-ssr .page-title-white {
+    color: #232b2b
+}
+
+#nlportal-ssr .page-title--big-mb {
+    margin-bottom: 20px
+}
+
+#nlportal-ssr .page-description {
+    margin-bottom: 16px
+}
+
+#nlportal-ssr .page-subtitle {
+    color: #232b2b;
+    font-family: UniformCondensed-Bold,Barlow Condensed,Arial
+}
+
+#nlportal-ssr .center {
+    text-align: center
+}
+
+#nlportal-ssr .bold-text {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .underline {
+    text-decoration: underline
+}
+
+#nlportal-ssr button,#nlportal-ssr input,#nlportal-ssr select,#nlportal-ssr textarea {
+    color: inherit;
+    font: inherit;
+    border: none;
+    background: none
+}
+
+#nlportal-ssr i[class^=portal-icon-]:before,#nlportal-ssr i[class*=" portal-icon-"]:before {
+    font-family: portal-icons!important;
+    font-style: normal;
+    font-weight: 400!important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#nlportal-ssr .portal-icon-account_circle:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-alert_outline:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-alert:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-arrow_up:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-badge:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-cancel:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-check:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-chevron_left:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-chevron_right:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-claimed:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-close:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-email:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-expand_less:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-expand_more:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-eye_crossed:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-eye:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-flare:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-gradient_separator:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-hourglass_top:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_access_time:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_account_balance_wallet:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_add_circle:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_add_money:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_arrow_downward:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_arrow_drop_down:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_arrow_upward:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_arrow-back:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_aspect_ratio:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_bank:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_business:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_calendar_month:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_cancel_circle_filled:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_chat_bubble:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_chat:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_check_circle_filled:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_check_circle_inverted:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_check_circle_unchecked:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_check_no-bg:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_check:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_chevron_right:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_cup:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_date_range:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_delete_forever:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_delete:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_deposit:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_description:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_eighteen:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_email:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_error_filled:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_error_outline:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_error:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_facebook:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_history:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_idea:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_import_export:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_inbox_empty:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_info:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_instagram:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_keyboard_arrow_right:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_launch:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_lock_outline:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_lock-open:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_lock:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_loupe:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_not_interested:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_notification_active:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_phone_in_talk:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_play_button_outline:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_receipt:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_report:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_schedule_boxed:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_search_error:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_search:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_sentiment_dissatisfied:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_sentiment:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_shield-person:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_timelapse:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_timer_boxed:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_twenty_four:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_twitter:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_verified_user:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_warning_outline:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_warning:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_x:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_xmas_gift:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-ic_youtube:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-info:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-lock:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-logout:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-mail:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-menu:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-money:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-pending:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-phone:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-push-notification:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-question:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-savings:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-separator:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-supervisor_account:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-swap_vertical_circle:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-thumbs_down:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-thumbs_up:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-unclaimed:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-verified_check:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-verified_cross:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-visibility:before {
+    content: ""
+}
+
+#nlportal-ssr .portal-icon-xmas-gift:before {
+    content: ""
+}
+
+#nlportal-ssr .content-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 4px
+}
+
+#nlportal-ssr .content-wrapper--wide {
+    max-width: 1320px
+}
+
+@media only screen and (min-width: 481px) {
+    #nlportal-ssr .content-wrapper {
+        padding:0 8px
+    }
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .content-wrapper {
+        padding:0 24px
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #nlportal-ssr .content-wrapper {
+        padding:0 48px
+    }
+}
+
+@keyframes nlportalSiteLoading {
+    0% {
+        transform: translateY(-50%) translate(-50%) rotate(0)
+    }
+
+    to {
+        transform: translateY(-50%) translate(-50%) rotate(360deg)
+    }
+}
+
+#nlportal-ssr .row {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px
+}
+
+#nlportal-ssr .row:first-child {
+    padding-top: 0
+}
+
+#nlportal-ssr .base-tile {
+    background: #fff;
+    box-shadow: 0 4px 16px #0000000f;
+    color: #232b2b;
+    position: relative;
+    padding: 24px 16px;
+    margin: 0
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .base-tile {
+        padding:24px;
+        border-radius: 6px
+    }
+}
+
+#nlportal-ssr .base-tile--padding {
+    padding: 16px
+}
+
+@media only screen and (min-width: 481px) {
+    #nlportal-ssr .base-tile--padding {
+        padding:24px
+    }
+}
+
+#nlportal-ssr .nl-portal,#nlportal-ssr #nlportal,#nlportal-footer {
+    box-sizing: border-box
+}
+
+#nlportal-ssr *,#nlportal-ssr *:before,#nlportal-ssr *:after {
+    box-sizing: border-box
+}
+
+#nlportal-ssr hr {
+    height: 1px;
+    background: #f5f5f5;
+    font-size: 0;
+    border: 0;
+    margin: 16px 0
+}
+
+#nlportal-ssr hr:last-child {
+    margin-bottom: 0
+}
+
+#nlportal-ssr hr:only-child {
+    margin: 0
+}
+
+#nlportal-ssr a {
+    color: #007a33
+}
+
+#nlportal-ssr ol,#nlportal-ssr ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    line-height: 1.6
+}
+
+#nlportal-ssr ol.outside li,#nlportal-ssr ul.outside li {
+    padding-left: 1.5em;
+    text-indent: -1.5em
+}
+
+#nlportal-ssr p,#nlportal-ssr h1,#nlportal-ssr h2,#nlportal-ssr h3,#nlportal-ssr h4,#nlportal-ssr h5,#nlportal-ssr h6,#nlportal-ssr iframe {
+    padding: 0;
+    margin: 0
+}
+
+#nlportal-ssr iframe {
+    border: 0
+}
+
+#nlportal-ssr p+p {
+    margin-top: 16px
+}
+
+#nlportal-ssr .links-as-text a {
+    text-decoration: none;
+    cursor: unset;
+    color: inherit
+}
+
+#nlportal-ssr .portal-icon {
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin: auto .2em;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#nlportal-ssr .portal-icon-xs {
+    font-size: 16px
+}
+
+#nlportal-ssr .portal-icon-s {
+    font-size: 18px
+}
+
+#nlportal-ssr .portal-icon-l {
+    font-size: 24px
+}
+
+#nlportal-ssr .portal-icon-xl {
+    font-size: 32px
+}
+
+#nlportal-ssr .portal-icon-2xl {
+    font-size: 48px
+}
+
+#nlportal-ssr .portal-icon--no-margin {
+    margin-left: 0;
+    margin-right: 0
+}
+
+#nlportal-ssr i:before {
+    display: flex
+}
+
+#nlportal-ssr fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+#nlportal-ssr .genesys-app {
+    display: block
+}
+
+#nlportal-ssr .genesys-app-hidden {
+    display: none
+}
+
+#nlportal-ssr strong {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .header-logo {
+    height: 40px;
+    margin-right: auto
+}
+
+@media only screen and (min-width: 341px) {
+    #nlportal-ssr .header-logo {
+        height:52px
+    }
+}
+
+#nlportal-ssr .header-logo img {
+    height: 90%;
+    max-width: 120px
+}
+
+@media only screen and (min-width: 1025px) {
+    #nlportal-ssr .header-logo img {
+        max-width:unset
+    }
+}
+
+#nlportal-ssr .header-logo picture {
+    height: 100%
+}
+
+#nlportal-ssr .header-logo.instant-games picture {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media only screen and (min-width: 375px) {
+    #nlportal-ssr .header-logo.instant-games img {
+        padding-right:10px
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    #nlportal-ssr .header-logo.instant-games img {
+        padding-right:0
+    }
+}
+
+#nlportal-ssr .header-logo.instant-games img {
+    height: 65%
+}
+
+#nlportal-ssr .time-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    margin-right: 16px
+}
+
+#nlportal-ssr .time-display--item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    font-size: 10px;
+    color: inherit;
+    margin-right: 12px
+}
+
+@media only screen and (min-width: 375px) {
+    #nlportal-ssr .time-display--item {
+        margin-right:24px
+    }
+}
+
+#nlportal-ssr .time-display--item:last-child {
+    margin-right: 0
+}
+
+#nlportal-ssr .time-display__session-timer {
+    cursor: pointer;
+    background-color: #009639;
+    padding: 2px 4px;
+    border-radius: 4px
+}
+
+#nlportal-ssr .time-display--icon {
+    margin-right: 4px
+}
+
+#nlportal-ssr .top-bar {
+    height: 32px;
+    background-color: #046834;
+    position: fixed;
+    width: 100%;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+#nlportal-ssr .top-bar a {
+    display: flex
+}
+
+#nlportal-ssr .top-bar img {
+    margin-left: 16px;
+    height: 20px
+}
+
+#nlportal-ssr .top-bar--hidden {
+    display: none;
+    height: 0
+}
+
+#nlportal-ssr .menu-button {
+    background-color: unset;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .3s ease-out
+}
+
+#nlportal-ssr .menu-button .nlportal-icon {
+    height: 30px;
+    width: 30px
+}
+
+#nlportal-ssr .menu-button.inline {
+    background: none;
+    color: #232b2b
+}
+
+#nlportal-ssr .menu-button.inline:hover {
+    text-decoration: underline
+}
+
+#nlportal-ssr .menu-button.inline.active:hover {
+    text-decoration: none
+}
+
+#nlportal-ssr .menu-button.active {
+    background: unset;
+    color: #fff
+}
+
+#nlportal-ssr .menu-button.active svg {
+    color: #fff
+}
+
+#nlportal-ssr .menu-button,#nlportal-ssr .menu-button:hover,#nlportal-ssr .menu-button:focus {
+    text-decoration: none
+}
+
+#nlportal-ssr .menu-button nlportal-close.svg {
+    width: 24px;
+    height: 24px;
+    transition: fill .3s ease-out
+}
+
+#nlportal-ssr .menu-button .nlportal-close {
+    width: 24px;
+    height: 24px
+}
+
+#nlportal-ssr .mobile-menu-button {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    margin-left: 8px
+}
+
+#nlportal-ssr .mobile-menu-button .portal-icon-menu {
+    margin: 0 8px
+}
+
+#nlportal-ssr .mobile-menu-button--open {
+    padding: 0
+}
+
+#nlportal-ssr .mobile-menu-button--close .menu-button {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+#nlportal-ssr .mobile-menu-button .menu-button {
+    box-shadow: none!important;
+    border: none!important;
+    margin: 0 0 0 16px;
+    padding: 0
+}
+
+#nlportal-ssr .mobile-menu-button__disabled {
+    width: 60px
+}
+
+#nlportal-ssr .mobile-menu-button__filler {
+    min-width: 60px;
+    min-height: 60px
+}
+
+#nlportal-ssr .mobile-menu-button__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px
+}
+
+@media only screen and (max-width: 320px) {
+    #nlportal-ssr .mobile-menu-button .mobile-menu__icon i {
+        margin-right:0;
+        margin-left: 0
+    }
+}
+
+#nlportal-ssr .mobile-menu-button .mobile-menu__icon--bars {
+    color: #fff;
+    margin: auto;
+    line-height: 0
+}
+
+#nlportal-ssr .mobile-menu-button .mobile-menu__icon--close {
+    color: #000
+}
+
+#nlportal-ssr .mobile-menu-button .mobile-menu__icon--close i {
+    margin-left: 0
+}
+
+#nlportal-ssr .mobile-menu-button .menu-button {
+    background: unset
+}
+
+#nlportal-ssr .mobile-menu-button .menu-button .close {
+    display: none
+}
+
+#nlportal-ssr .mobile-menu-button .menu-button.active {
+    animation: fade_in_show-0d3e6143 1s
+}
+
+#nlportal-ssr .mobile-menu-button .menu-button.active .close {
+    display: flex
+}
+
+@keyframes fade_in_show-0d3e6143 {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+#nlportal-ssr .label-with-image {
+    font-size: 14px;
+    display: flex;
+    color: #646b6a
+}
+
+#nlportal-ssr .label-with-image span,#nlportal-ssr .label-with-image a {
+    font-family: Uniform-Bold,Barlow,Arial;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: auto
+}
+
+#nlportal-ssr .label-with-image .label {
+    height: 32px;
+    display: flex;
+    width: 100%
+}
+
+#nlportal-ssr .label-with-image .label .isActive {
+    color: #232b2b
+}
+
+#nlportal-ssr .label-with-image .label a.isActive {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .label-with-image .reduced-opacity {
+    opacity: .3
+}
+
+#nlportal-ssr .label-with-image .image {
+    width: 32px;
+    margin-right: 8px
+}
+
+#nlportal-ssr .label-with-image .icon {
+    margin-left: auto
+}
+
+#nlportal-ssr .label-with-image--active {
+    color: #232b2b
+}
+
+#nlportal-ssr .label-with-image .no-border {
+    border-bottom: 0px
+}
+
+#nlportal-ssr .expansion-panel {
+    font-size: 14px;
+    height: fit-content
+}
+
+#nlportal-ssr .expansion-panel .expansion-panel-header {
+    display: flex;
+    cursor: pointer
+}
+
+#nlportal-ssr .expansion-panel .expansion-panel-header .chevron-180 {
+    transform: rotate(180deg)
+}
+
+#nlportal-ssr .expansion-panel .expansion-panel-header .icon {
+    transition: transform .5s;
+    margin-left: auto
+}
+
+#nlportal-ssr .expansion-panel .expansion-panel-header--active {
+    color: #232b2b
+}
+
+#nlportal-ssr .expansion-panel .expansion-panel-header--expanded {
+    background-color: #f5f5f5
+}
+
+#nlportal-ssr .expansion-panel .expansion-content {
+    display: flex;
+    text-transform: none;
+    font-weight: 500;
+    height: 100%;
+    visibility: visible;
+    transition: max-height .25s ease-in,visibility .25s linear;
+    overflow: hidden
+}
+
+#nlportal-ssr .expansion-panel .invisible {
+    max-height: 0;
+    visibility: hidden
+}
+
+#nlportal-ssr .expansion-panel .no-border {
+    border-bottom: 0px
+}
+
+#nlportal-ssr .align-chevron {
+    margin-right: 0
+}
+
+#nlportal-ssr .service-links {
+    margin: 0;
+    overflow-y: auto
+}
+
+#nlportal-ssr .service-links .solid {
+    color: #ccc;
+    margin: 20px 16px;
+    height: 1px!important;
+    background: #dddddc!important;
+    font-size: 0!important;
+    border: 0!important
+}
+
+#nlportal-ssr .service-links ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0
+}
+
+#nlportal-ssr .service-links ul li {
+    display: block;
+    padding: 8px 0 8px 16px;
+    position: relative
+}
+
+#nlportal-ssr .service-links ul.sub-links {
+    margin-left: 38px;
+    width: 100%
+}
+
+#nlportal-ssr .service-links.inline {
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    flex: auto;
+    justify-content: space-between
+}
+
+#nlportal-ssr .service-links.inline ul {
+    display: flex;
+    border-bottom: 0;
+    padding: 0
+}
+
+#nlportal-ssr .service-links.inline ul li {
+    display: inline-flex;
+    padding: 0 8px
+}
+
+#nlportal-ssr .service-links.inline .login-list {
+    color: #232b2b
+}
+
+#nlportal-ssr .service-links.mobile {
+    flex-grow: 1
+}
+
+#nlportal-ssr .service-links.mobile .left-links {
+    width: 280px
+}
+
+#nlportal-ssr .service-links.mobile .left-links .label-with-image img[src=""] {
+    width: 0;
+    margin-right: 40px
+}
+
+#nlportal-ssr .service-links.mobile .right-links {
+    width: 300px
+}
+
+#nlportal-ssr .service-links.mobile .right-links li {
+    padding: 0 0 0 16px;
+    height: 40px;
+    display: flex
+}
+
+#nlportal-ssr .service-links.mobile .right-links li a {
+    color: #646b6a
+}
+
+#nlportal-ssr .service-links.mobile .right-links li a.isActive {
+    color: #232b2b
+}
+
+#nlportal-ssr .service-links .sub-navigation {
+    height: 37px;
+    padding: 0 0 0 4px
+}
+
+#nlportal-ssr .swipe-transition {
+    transition: all .1s cubic-bezier(1,.5,.8,1)
+}
+
+#nlportal-ssr .menu-expander {
+    background: #fff;
+    width: 320px;
+    max-width: 95vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    font-size: 14px;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    z-index: 3
+}
+
+#nlportal-ssr .menu-expander.left {
+    left: 0
+}
+
+#nlportal-ssr .menu-expander.left.expander-enter-from,#nlportal-ssr .menu-expander.left.expander-leave-to {
+    transform: translate(-100%)
+}
+
+#nlportal-ssr .menu-expander.right {
+    right: 0
+}
+
+#nlportal-ssr .menu-expander.right.expander-enter-from,#nlportal-ssr .menu-expander.right.expander-leave-to {
+    transform: translate(100%)
+}
+
+#nlportal-ssr .menu-expander-content {
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column
+}
+
+#nlportal-ssr .menu-expander-content--no-margin {
+    margin-top: 0
+}
+
+#nlportal-ssr .menu-expander h1 {
+    color: #ff6900
+}
+
+#nlportal-ssr .menu-expander .service-links {
+    margin-top: -20px
+}
+
+#nlportal-ssr .menu-expander .service-links ul li a.isActive:after {
+    border: 0
+}
+
+#nlportal-ssr .menu-expander .service-links ul li a {
+    color: #646b6a;
+    text-transform: uppercase;
+    margin: auto;
+    line-height: 1.3;
+    letter-spacing: normal;
+    width: 100%;
+    text-align: left
+}
+
+#nlportal-ssr .account-menu-header {
+    margin-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px
+}
+
+#nlportal-ssr .account-menu-header__personal {
+    margin-left: 8px
+}
+
+#nlportal-ssr .account-menu-header__personal--name {
+    color: #232b2b;
+    font-family: Uniform-Bold,Barlow,Arial;
+    font-size: 18px;
+    margin-right: 32px
+}
+
+#nlportal-ssr .account-menu-header__personal--email {
+    color: #646b6a;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Uniform-Medium,Barlow,Arial
+}
+
+#nlportal-ssr .menu-indicator {
+    min-width: 20px;
+    min-height: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff6900;
+    color: #fff;
+    font-family: Uniform-Bold,Barlow,Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+#nlportal-ssr .menu-indicator__value {
+    font-size: 12px;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#nlportal-ssr .account-menu-links {
+    padding-bottom: 8px;
+    margin-top: 16px;
+    flex-grow: 1
+}
+
+#nlportal-ssr .account-menu-links__head {
+    display: flex;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+#nlportal-ssr .account-menu-links__head-title {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+#nlportal-ssr .account-menu-links__head-title .menu-indicator {
+    margin-left: 12px
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .account-menu-links__head:hover {
+        background:#f5f5f5
+    }
+}
+
+#nlportal-ssr .account-menu-links__head--no-border {
+    border-bottom: none
+}
+
+#nlportal-ssr .account-menu-links__expand-sub {
+    display: flex;
+    flex-direction: column
+}
+
+#nlportal-ssr .account-menu-links__expand-head,#nlportal-ssr .account-menu-links__expand-sub-item {
+    padding: 0 20px 0 0;
+    width: 100%
+}
+
+#nlportal-ssr .account-menu-links__expand-head .menu-indicator {
+    margin-left: 12px
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .account-menu-links__expand-sub-item:hover {
+        background:#f5f5f5
+    }
+}
+
+#nlportal-ssr .account-menu-links__expand-container:last-child .account-menu-links__expand .expansion-panel-header {
+    border-bottom: unset
+}
+
+#nlportal-ssr .account-menu-links__expand--no-border {
+    border-bottom: none
+}
+
+#nlportal-ssr .account-menu-links__expand .expansion-content {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+#nlportal-ssr .account-menu-links__expand .expansion-panel-header {
+    margin-right: -16px;
+    margin-left: -16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .account-menu-links__expand .expansion-panel-header:hover {
+        background:#f5f5f5
+    }
+}
+
+#nlportal-ssr .account-menu-links__expand .expansion-panel-header .icon {
+    font-size: 24px
+}
+
+#nlportal-ssr .account-menu-links__expand .expansion-panel-header--expanded {
+    border-bottom: unset
+}
+
+#nlportal-ssr .account-menu-links__expand-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: #232b2b;
+    font-family: Uniform-Medium,Barlow,Arial
+}
+
+#nlportal-ssr .account-menu-links__expand-head--active {
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .account-menu-links__expand-sub {
+    margin: 0;
+    list-style: none;
+    width: 100%
+}
+
+#nlportal-ssr .account-menu-links__expand-sub-item {
+    width: 100%;
+    display: flex
+}
+
+#nlportal-ssr .account-menu-links__expand-sub-item .text-link {
+    width: 100%;
+    padding: 15px 16px 15px 64px
+}
+
+#nlportal-ssr .account-menu-links__expand-sub-item--active {
+    background: #f5f5f5
+}
+
+#nlportal-ssr .account-menu-links__icon {
+    margin-left: 0;
+    margin-right: 12px;
+    color: #646b6a;
+    font-size: 24px
+}
+
+#nlportal-ssr .account-menu-links__icon--green {
+    color: #009639
+}
+
+#nlportal-ssr .information-tooltip {
+    display: inline-block;
+    position: relative
+}
+
+#nlportal-ssr .information-tooltip button {
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    color: #232b2b
+}
+
+#nlportal-ssr .information-tooltip button i {
+    color: #646b6a
+}
+
+#nlportal-ssr .information-tooltip .message {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #232b2b;
+    padding: 8px;
+    color: #fff;
+    transition: visibility 0s .4s ease,opacity .1s .3s ease;
+    min-width: 188px;
+    border: 1px solid #232b2b;
+    text-align: left;
+    box-shadow: 0 4px 16px #0000000f;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    z-index: 1;
+    border-radius: 4px;
+    transform: translate(-40%,12px);
+    font-family: Uniform-Regular,Barlow,Arial
+}
+
+#nlportal-ssr .information-tooltip .message:after {
+    top: 100%;
+    left: 50%;
+    content: " ";
+    height: 16px;
+    width: 16px;
+    background-color: #232b2b;
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(45deg)
+}
+
+#nlportal-ssr .information-tooltip .message:after {
+    top: -9px;
+    left: 43%;
+    display: block
+}
+
+@media only screen and (max-width: 1024px) {
+    #nlportal-ssr .information-tooltip .message {
+        transform:translate(-70%,12px)
+    }
+
+    #nlportal-ssr .information-tooltip .message:after {
+        top: -9px;
+        left: 73%
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #nlportal-ssr .information-tooltip .message--mobile-left {
+        transform:translate(-105%,-60%)
+    }
+
+    #nlportal-ssr .information-tooltip .message--mobile-left:after {
+        top: calc(50% - 10.5px);
+        left: 100%;
+        margin-left: -8px
+    }
+}
+
+#nlportal-ssr .information-tooltip .message--left {
+    transform: translate(-105%,-60%)
+}
+
+#nlportal-ssr .information-tooltip .message--left:after {
+    top: calc(50% - 10.5px);
+    left: 100%;
+    margin-left: -8px
+}
+
+#nlportal-ssr .information-tooltip:hover .message,#nlportal-ssr .information-tooltip>button:focus+.message {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s 0s ease,opacity .3s ease
+}
+
+#nlportal-ssr .balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 24px;
+    padding: 16px;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 8px
+}
+
+#nlportal-ssr .balance--small {
+    margin: 0 0 8px
+}
+
+#nlportal-ssr .balance__row--saldo .balance__value,#nlportal-ssr .balance__row--saldo .balance__title,#nlportal-ssr .balance__row--total .balance__value,#nlportal-ssr .balance__row--total .balance__title {
+    font-family: UniformCondensed-Black,Barlow Condensed,Arial;
+    color: #232b2b;
+    font-size: 20px;
+    text-transform: uppercase
+}
+
+#nlportal-ssr .balance__row--saldo-small .balance__value,#nlportal-ssr .balance__row--saldo-small .balance__title,#nlportal-ssr .balance__row--total-small .balance__value,#nlportal-ssr .balance__row--total-small .balance__title {
+    font-size: 16px
+}
+
+#nlportal-ssr .balance__row--small .balance__value,#nlportal-ssr .balance__row--small .balance__title {
+    font-family: Uniform-Bold,Barlow,Arial;
+    font-size: 14px;
+    text-transform: unset
+}
+
+#nlportal-ssr .balance__title,#nlportal-ssr .balance__value {
+    font-family: Uniform-Medium,Barlow,Arial;
+    font-size: 14px;
+    color: #646b6a;
+    display: flex;
+    align-items: center
+}
+
+#nlportal-ssr .balance__value .portal-icon {
+    margin-right: 0
+}
+
+#nlportal-ssr .balance__value--bonus {
+    display: flex;
+    align-items: center
+}
+
+#nlportal-ssr .balance__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px
+}
+
+#nlportal-ssr .balance__row:last-child {
+    margin-bottom: 0
+}
+
+#nlportal-ssr .balance__row--bonus:last-child {
+    border-bottom: 1px solid #e5e5e5
+}
+
+#nlportal-ssr .balance__row--total {
+    padding-top: 8px;
+    border-top: 1px solid #e5e5e5
+}
+
+#nlportal-ssr .account-menu-wallet__deposit-blocked {
+    width: 100%
+}
+
+#nlportal-ssr .account-menu-wallet__deposit-blocked p {
+    margin-top: 8px;
+    color: #232b2b;
+    font-weight: 700;
+    text-align: center
+}
+
+#nlportal-ssr .account-menu-wallet__deposit-blocked p a {
+    color: #007a33
+}
+
+#nlportal-ssr .account-menu-wallet__bank {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px
+}
+
+#nlportal-ssr .logout-button {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    color: #007a33;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: Uniform-Bold,Barlow,Arial
+}
+
+#nlportal-ssr .logout-button .nlportal-icon {
+    margin: 0 4px 0 0
+}
+
+#nlportal-ssr .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#nlportal-ssr .spinner .portal-icon {
+    width: 50px;
+    height: 50px;
+    display: flex
+}
+
+#nlportal-ssr .spinner__tall {
+    height: 684px
+}
+
+#nlportal-ssr .account-menu {
+    display: flex;
+    justify-content: flex-end
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1300px) {
+    #nlportal-ssr .account-menu {
+        width:33.3333333333%
+    }
+}
+
+#nlportal-ssr .account-menu__icon.close i {
+    margin-right: 0;
+    margin-top: 8px;
+    color: #232b2b
+}
+
+#nlportal-ssr .account-menu-deposit-items {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+#nlportal-ssr .account-menu-deposit-items-icon {
+    margin-right: 0
+}
+
+#nlportal-ssr .account-menu-amount {
+    font-family: Uniform-Bold,Barlow,Arial;
+    background: #009639;
+    padding: 9px;
+    border-radius: 4px;
+    margin-right: 8px;
+    min-height: 34px
+}
+
+#nlportal-ssr .account-menu-amount .spinner .portal-icon {
+    height: 20px
+}
+
+@media all and (max-width: 340px) {
+    #nlportal-ssr .account-menu-amount {
+        position:relative
+    }
+}
+
+#nlportal-ssr .account-menu__profile-button {
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #007a33;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 0
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1300px) {
+    #nlportal-ssr .account-menu__profile-button {
+        width:max-content
+    }
+}
+
+@media all and (max-width: 340px) {
+    #nlportal-ssr .account-menu__profile-button {
+        width:unset
+    }
+}
+
+#nlportal-ssr .account-menu__profile-button .icon-right {
+    width: 26px;
+    height: 26px
+}
+
+@media all and (max-width: 340px) {
+    #nlportal-ssr .account-menu__profile-button .icon-right {
+        width:0;
+        height: 0
+    }
+}
+
+#nlportal-ssr .account-menu__profile-button .menu-indicator {
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px
+}
+
+#nlportal-ssr .account-menu .menu-button {
+    animation: fade_in_show-68083a16 1s;
+    color: #232b2b;
+    z-index: 20;
+    position: fixed;
+    padding: 0;
+    top: 8px;
+    height: auto
+}
+
+@keyframes fade_in_show-68083a16 {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+#nlportal-ssr .account-menu-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+#nlportal-ssr .account-menu .portal-icon-account_circle {
+    color: #fff
+}
+
+#nlportal-ssr .divider {
+    background-color: #e5e5e5
+}
+
+#nlportal-ssr .login-menu__wrapper {
+    height: 60px;
+    right: 0
+}
+
+@media only screen and (max-width: 820px) {
+    #nlportal-ssr .login-menu__wrapper {
+        flex:1 1 auto
+    }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1300px) {
+    #nlportal-ssr .login-menu__wrapper {
+        display:flex;
+        justify-content: flex-end;
+        width: 33.3%
+    }
+}
+
+#nlportal-ssr .login-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media only screen and (max-width: 820px) {
+    #nlportal-ssr .login-menu {
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+        filter: drop-shadow(0px 4px 16px rgba(0,0,0,.25))
+    }
+}
+
+#nlportal-ssr .login-menu__desktop {
+    margin-right: 8px
+}
+
+#nlportal-ssr .login-menu button {
+    padding: 0 8px;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 10px
+}
+
+@media only screen and (min-width: 375px) {
+    #nlportal-ssr .login-menu button {
+        font-size:12px
+    }
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .login-menu button {
+        font-size:14px
+    }
+}
+
+#nlportal-ssr .login-menu .login-menu__login {
+    margin-right: 8px
+}
+
+#nlportal-ssr .login-menu__register {
+    margin-right: 0
+}
+
+@media only screen and (min-width: 1301px) {
+    #nlportal-ssr .login-menu__register {
+        margin-right:16px
+    }
+}
+
+#nlportal-ssr .login-menu .button-primary-green:hover,#nlportal-ssr .login-menu .button-primary-green:focus {
+    background: #009639
+}
+
+#nlportal-ssr .header {
+    height: 92px;
+    position: relative
+}
+
+#nlportal-ssr .header--hidden {
+    height: 0
+}
+
+#nlportal-ssr .header .mobile {
+    display: flex
+}
+
+@media only screen and (min-width: 1301px) {
+    #nlportal-ssr .header .mobile {
+        display:none
+    }
+
+    #nlportal-ssr .header .nlportal-header {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #nlportal-ssr .header .inline {
+        display:none
+    }
+
+    #nlportal-ssr .header .nlportal-header {
+        padding-right: 16px
+    }
+}
+
+#nlportal-ssr .header.instant-games .nlportal-header {
+    background-color: #d6436d
+}
+
+#nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary {
+    background: #fceff4;
+    color: #53233d;
+    border-radius: 8px;
+    font-family: Montserrat, serif;
+    font-size: 14px;
+    padding: 0px 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green, #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green:hover, #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green:focus {
+        font-size: 13px !important;
+        padding: 0px 10px !important;
+    }
+    #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary {
+        font-size: 13px !important;
+        padding: 0px 10px !important;
+    }
+    ._gridSlide-6-columns_jfo3v_61 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green, #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green:hover, #nlportal-ssr .header.instant-games .login-menu__wrapper .button-primary-green:focus {
+    background-color: #9d2f4b;
+    border-radius: 8px;
+    font-family: Montserrat, serif;
+    font-size: 14px;
+    padding: 0px 16px;
+    font-weight: 500;
+}
+
+#nlportal-ssr .header.instant-games .account-menu .account-menu-amount {
+    border-radius: 8px;
+    background-color: #9d2f4b
+}
+
+#nlportal-ssr .header.instant-games .account-menu .account-menu__profile-button {
+    background-color: #d6436d
+}
+
+#nlportal-ssr .header.instant-games .service-links .left-links li a:hover:after,#nlportal-ssr .header.instant-games .service-links .left-links li a.isActive:after,#nlportal-ssr .header.instant-games .service-links .right-links li a:hover:after,#nlportal-ssr .header.instant-games .service-links .right-links li a.isActive:after {
+    border-bottom-color: #f97638
+}
+
+#nlportal-ssr .header.instant-games .menu-indicator {
+    background: #f97638
+}
+
+#nlportal-ssr .header.instant-games .top-bar {
+    background-color: #9d2f4b
+}
+
+#nlportal-ssr .header.instant-games .top-bar .time-display__session-timer {
+    background-color: #d6436d
+}
+
+#nlportal-ssr .header__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed
+}
+
+#nlportal-ssr .nlportal-header {
+    background-color: #007a33;
+    height: 60px;
+    font-size: 12px;
+    position: fixed;
+    top: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 10001;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden
+}
+
+#nlportal-ssr .nlportal-header--hidden {
+    height: 0
+}
+
+#nlportal-ssr .nlportal-header .menu-right-wrapper {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: flex-end!important;
+    align-items: center;
+    min-width: 120px;
+    min-height: 60px
+}
+
+#nlportal-ssr .nlportal-header .registration-mode-navigation {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px
+}
+
+#nlportal-ssr .nlportal-header .registration-mode-navigation__icon-container {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center
+}
+
+#nlportal-ssr .nlportal-header .registration-mode-navigation .nlportal-icon.nlportal-close_w_box {
+    color: #fff
+}
+
+#nlportal-ssr .nlportal-header .registration-mode-navigation svg {
+    width: 32px;
+    height: 32px
+}
+
+#nlportal-ssr .nlportal-header .time-age-container {
+    display: flex
+}
+
+#nlportal-ssr .nlportal-header .time-container {
+    padding: 0 10px;
+    border-left: 1px solid #cccccc;
+    display: flex;
+    height: 60px
+}
+
+#nlportal-ssr .required-page-mode {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px
+}
+
+@media only screen and (min-width: 821px) {
+    #nlportal-ssr .required-page-mode {
+        justify-content:flex-end
+    }
+}
+
+#nlportal-ssr .required-page-mode__button {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #fff
+}
+
+#nlportal-ssr .required-page-mode .nlportal-icon.nlportal-close_w_box {
+    color: #fff
+}
