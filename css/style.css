@@ -7,6 +7,9 @@
   ._gridSlide-6-columns_jfo3v_61 {
     grid-template-columns: repeat(2, 1fr) !important;
     }
+    a.global-w-btn-100 {
+      width: 100%;
+  }
   }
   @media (min-width: 768px) {
     ._container_1vzj5_2 {
@@ -145,4 +148,7 @@
     gap: 12px;
     gap: var(--spacing-lg);
   }
-  
+  ._primary_hpmcw_83:hover, ._primary_hpmcw_83:focus {
+    background: var(--control-color-primary-hover);
+    color: #fff !important;
+}

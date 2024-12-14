@@ -37,19 +37,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <noscript>
-            <div id="noscript-section" class="theme-instantgames">
-                <section>
-                    <h2>Staat Javascript Uit?</h2>
-                    <p>Om optimaal gebruik te maken van TOTO moet Javascript ingeschakeld zijn. Controleer de
-                        instellingen in uw browser en ververs de site!
-                    </p>
-                    <a href="" class="button-primary">Ververs Venster</a>
-                </section>
-            </div>
-        </noscript>
         <div id="app">
             <div class="theme-instantgames _main_1ajeu_2">
                 <div>
@@ -61,22 +53,217 @@
                                 </a>
                             </div>
                             <div class="nlportal-header sticky-header" data-v-0e2c02b6>
-                                <a href="/winn-itt" class="header-logo instant-games" title="Winn-it" target="_blank">
+                                <a href="/" class="header-logo instant-games" title="Winn-it">
                                     <picture>
                                         <source srcset="images/winnitt-logo.svg" media="(min-width: 374px)" alt="Winn-itt logo">
                                         <img src="images/winnitt-logo.svg" alt="Winn-itt logo">
                                     </picture>
                                 </a>
-                                <div class="login-menu__wrapper" data-v-0e2c02b6 data-v-d5a0abaf>
-                                    <div class="login-menu" data-v-d5a0abaf>
-                                        <div data-v-d5a0abaf>
-                                            <button id type="button" class="button-primary-green login-menu__login">
-                                            Inloggen
+                                <div class="login-menu__wrapper">
+                                    <div class="login-menu">
+                                        <div>
+                                            <button id="loginButton" type="button" class="button-primary-green login-menu__login js-login-open" data-popup-trigger="login">
+                                                Inloggen
                                             </button>
                                         </div>
-                                        <button type="button" class="button-primary login-menu__register" data-v-d5a0abaf>Aanmelden</button>
+                                        <button type="button" class="toggle-register-btn js-login-open button-primary login-menu__register" data-popup-trigger="register">
+                                            Aanmelden
+                                        </button>
                                     </div>
                                 </div>
+                                <div class="login-form-container">
+                                    <div class="login-form">
+                                        <div class="log-img">
+                                            <img src="images/winnitt-logo.svg" alt="Logo">
+                                        </div>
+                                        <input type="email" placeholder="Voer uw e-mailadres in" class="log-input">
+                                        <input type="password" placeholder="Voer uw wachtwoorden in" class="log-input">
+                                        <button class="login-btn">Inloggen</button>
+                                        <a href="#" class="forgot-password">Wachtwoord vergeten?</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="register-form-container">
+                                    <div class="register-form">
+                                        <div class="log-img">
+                                            <img src="images/winnitt-logo.svg" alt="Logo">
+                                        </div>
+                                        <input type="email"  class="log-input" placeholder="Voer uw e-mailadres in">
+                                        <input type="password"  class="log-input" placeholder="Voer uw wachtwoorden in">
+                                        <input type="password"  class="log-input" placeholder="Bevestig uw wachtwoorden">
+                                        <button class="register-btn">Aanmelden</button>
+                                        <button class="toggle-login-btn">Heeft u al een account? Inloggen</button>
+                                    </div>
+                                </div>
+                                <div class="popup-message">
+                                    <p>Autorisatielink is verzonden!</p>
+                                </div>
+                                <style>
+                                    .login-form-container, 
+                                    .register-form-container {
+                                        display: none;
+                                        position: fixed;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(0, 0, 0, 0.8);
+                                        align-items: center;
+                                        justify-content: center;
+                                        z-index: 999;
+                                        font-family: "Inter", serif !important;
+                                    }
+                                    .login-form, .register-form {
+                                        background-color: #1a1a1a;
+                                        padding: 3rem;
+                                        width: 90%;
+                                        max-width: 400px;
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    input.log-input {
+                                        border: 1px solid #535662 !important;
+                                        outline: 0px;
+                                        padding: 12px;
+                                        margin: 8px 0px;
+                                        background: #000000 !important;
+                                        border-radius: 6px;
+                                        font-size: 15px !important;
+                                        color: #fff !important;
+                                        font-weight: 400 !important;
+                                    }
+                                    .log-img {
+                                        background: #f0436c;
+                                        width: 100%;
+                                        text-align: center;
+                                        padding: 30px 0px;
+                                        margin-bottom: 15px;
+                                    }
+                                    .log-img img {
+                                        width: 250px;
+                                    }
+                                    ::placeholder {
+                                    color: rgba(167, 167, 167, 0.801);
+                                    opacity: 1;
+                                    }
+                                    ::-ms-input-placeholder { 
+                                        color: rgb(167, 167, 167);
+                                    }
+                                    button.login-btn, .register-btn{
+                                        background: #22c55e !important;
+                                        margin: 12px 0px;
+                                        padding: 10px 0px !important;
+                                        border-radius: 6px;
+                                        font-size: 16px !important;
+                                        color: #fff !important;
+                                        font-weight: 500 !important;
+                                    }
+                                    .toggle-login-btn{
+                                        background: transparent !important;
+                                        margin: 12px 0px;
+                                        border: 1px solid #22c55e !important;
+                                        padding: 10px 0px !important;
+                                        border-radius: 6px;
+                                        font-size: 16px !important;
+                                        color: #22c55e !important;
+                                        font-weight: 500 !important;
+                                        position: relative;
+                                        top: -5px;
+                                    }
+                                    button.login-btn:hover, .register-btn:hover{
+                                        background: #15aa4b !important;
+                                    }
+                                    a.forgot-password {
+                                        color: #22c55e !important;
+                                        font-size: 15px !important;
+                                        text-align: center;
+                                        padding: 12px 0px;
+                                        font-weight: 400;
+                                    }
+                                    .toggle-login-btn:hover{
+                                        color: #ffffff !important;
+                                        background: #22c55e !important;
+                                    }
+                                    .popup-message {
+                                        position: fixed;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        background-color: #1a1a1a;
+                                        padding: 1rem 2rem;
+                                        border-radius: 8px;
+                                        color: white;
+                                        font-weight: 400;
+                                        display: none;
+                                        font-size: 15px !important;
+                                        font-family: "Inter", serif !important;
+                                    }
+                                    .login-form-container.active,
+                                    .register-form-container.active {
+                                        display: flex;
+                                    }
+                                    .popup-message.show {
+                                        display: block;
+                                    }
+                                </style>
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        // Function to open the login popup
+                                        function openLoginPopup() {
+                                            document.querySelector('.login-form-container').classList.add('active');
+                                        }
+                                
+                                        // Function to open the register popup
+                                        function openRegisterPopup() {
+                                            document.querySelector('.register-form-container').classList.add('active');
+                                        }
+                                
+                                        // Attach click event to any button with custom attributes
+                                        document.querySelectorAll('[data-popup-trigger="login"]').forEach(button => {
+                                            button.addEventListener('click', openLoginPopup);
+                                        });
+                                
+                                        document.querySelectorAll('[data-popup-trigger="register"]').forEach(button => {
+                                            button.addEventListener('click', openRegisterPopup);
+                                        });
+                                
+                                        // Switch back to login form
+                                        document.querySelector('.toggle-login-btn').addEventListener('click', function () {
+                                            document.querySelector('.register-form-container').classList.remove('active');
+                                            document.querySelector('.login-form-container').classList.add('active');
+                                        });
+                                
+                                        // Close forms by clicking outside
+                                        document.addEventListener('click', function (event) {
+                                            if (!event.target.closest('.login-form, .register-form, .js-login-open')) {
+                                                document.querySelector('.login-form-container').classList.remove('active');
+                                                document.querySelector('.register-form-container').classList.remove('active');
+                                            }
+                                        });
+                                
+                                        // Show popup message
+                                        function showPopupMessage() {
+                                            const popup = document.querySelector('.popup-message');
+                                            popup.classList.add('show');
+                                            setTimeout(() => {
+                                                popup.classList.remove('show');
+                                            }, 3000);
+                                        }
+                                
+                                        // Handle login button click
+                                        document.querySelector('.login-btn').addEventListener('click', function () {
+                                            document.querySelector('.login-form-container').classList.remove('active');
+                                            showPopupMessage();
+                                        });
+                                
+                                        // Handle register button click
+                                        document.querySelector('.register-btn').addEventListener('click', function () {
+                                            document.querySelector('.register-form-container').classList.remove('active');
+                                            showPopupMessage();
+                                        });
+                                    });
+                                </script>
+                                
                             </div>
                         </header>
                     </div>
@@ -105,8 +292,10 @@
                                                             Registreer, stort €10, speel €10 in Bingo en ontvang €30 welkomstbonus! 
                                                             </p>
                                                             <div class="_buttons_1adrz_103">
-                                                                <a class="_button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103 _anchor_2ym88_2 _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103">
-                                                                Meld je hier aan
+                                                                <a class="global-w-btn-100">
+                                                                    <button class="js-login-open global-btn _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103 _anchor_2ym88_2 _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103" data-popup-trigger="register">
+                                                                        Meld je hier aan
+                                                                    </button>
                                                                 </a>
                                                             </div>
                                                             <div class="_wrapper_1iix1_2 _twentyFourLabel_1adrz_124">
@@ -155,8 +344,10 @@
                                                 <div class="_richText_69bk9_2 _md_69bk9_3 _intro_59u8k_57">
                                                     <p>Op Winnitt hebben we speciaal voor jou vermakelijke spellen verzameld. Je vindt er een uniek spelaanbod. Wat denk je van Bingo, Slingo of iets heel anders zoals Solitaire? Ook kun je kiezen voor Click &amp;Reveal games, Plinko games en vrolijke fruitspellen. Genoeg te ontdekken dus! En dat allemaal in een veilige en betrouwbare online omgeving. Winnitt is plezier, zonder gedoe of verplichtingen.</p>
                                                 </div>
-                                                <a href="#" class="_anchor_2ym88_2 _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _link_59u8k_67">
-                                                Ontdek de spellen
+                                                <a class="global-w-btn-100">
+                                                    <button class="js-login-open global-btn _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103 _anchor_2ym88_2 _button_hpmcw_2 _primary_hpmcw_83 _large_hpmcw_43 _upperCase_hpmcw_160 _shadow_hpmcw_29 _button_1adrz_103" data-popup-trigger="register">
+                                                        Ontdek de spellen
+                                                    </button>
                                                 </a>
                                             </div>
                                         </div>
@@ -576,15 +767,15 @@
                                                 <div data-v-0aea1e6b="" class="footer__group-title">Betrouwbaar en verantwoord spelen</div>
                                                 <ul data-v-0aea1e6b="" class="footer__group-item-list">
                                                     <li data-v-0aea1e6b="" class="footer__group-item">
-                                                        <a data-v-e146d7ee="" href="https://www.toto.nl/verantwoordspelen" class="footer-style" title="Verantwoord spelen" target="">Verantwoord spelen</a></li>
+                                                        <a data-v-e146d7ee="" href="responsible-gaming.html" class="footer-style" title="Verantwoord spelen" target="_blank">Verantwoord spelen</a></li>
                                                     <li data-v-0aea1e6b="" class="footer__group-item">
-                                                        <a data-v-e146d7ee="" href="https://www.toto.nl/privacy" class="footer-style" title="Privacy statement" target="">Privacy statement</a></li>
+                                                        <a data-v-e146d7ee="" href="privacy.html" class="footer-style" title="Privacy statement" target="_blank">Privacy statement</a></li>
                                                     <li data-v-0aea1e6b="" class="footer__group-item">
-                                                        <a data-v-e146d7ee="" href="https://www.toto.nl/cookies" class="footer-style" title="Cookiebeleid" target="">Cookiebeleid</a></li>
+                                                        <a data-v-e146d7ee="" href="cookie-policy.html" class="footer-style" title="Cookiebeleid" target="_blank">Cookiebeleid</a></li>
                                                     
                                                     <li data-v-0aea1e6b=""
                                                     class="footer__group-item">
-                                                        <a data-v-e146d7ee="" href="https://www.toto.nl/vergunning" class="footer-style" title="Vergunning" target="">Vergunning</a></li>
+                                                        <a data-v-e146d7ee="" href="license.html" class="footer-style" title="Vergunning" target="_blank">Vergunning</a></li>
                                                 </ul>
                                             </section>
                                             <section data-v-0aea1e6b="">
